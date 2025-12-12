@@ -73,11 +73,38 @@ init_oracle_client()
 ```
 
 ### Dependencies
-- polars, pandas, numpy
-- plotly, matplotlib, seaborn
-- cx_Oracle
-- requests, aiohttp
-- scikit-learn, lightgbm
+```python
+# Core
+import logging
+import time
+import pickle
+import sys
+import os
+import random
+import warnings
+
+# Data
+import numpy as np
+import pandas as pd
+import polars as pl
+import requests
+import asyncio
+import aiohttp
+from pytz import timezone
+from tqdm.auto import tqdm
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+# HTTP
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+
+# Database
+import cx_Oracle
+
+# Visualization
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+```
 
 ## Usage
 
