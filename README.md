@@ -60,17 +60,12 @@ Based on 2025 season data (~2,430 games):
 
 ## Requirements
 
-### API Key
-Requires a valid API key with Season/Career Level API Access subscription:
+### API Key or PyBaseball
+Requires a valid API key with API Access subscription:
 ```python
 api_key = 'your-api-key-here'
 ```
-
-### Oracle Client
-Initialize before use:
-```python
-init_oracle_client()
-```
+You can also use PyBaseball to generate the dataframe needed here.
 
 ### Dependencies
 ```python
